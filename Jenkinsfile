@@ -7,6 +7,7 @@ pipeline
     { steps{ git branch: 'main', url: 'https://github.com/shubhu34/devops_pipeline_jenkins.git' }}
     
     stage('print your message')
-    {      steps{ sh 'echo hello'} }
+    {      steps{ sh 'echo hello'
+                  sh 'echo bye' } }
   }
 }
